@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css"> <!-- Optional CSS file -->
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="tickets.html">Tickets</a></li>
+                <li><a href="reserve.html">Reserve</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Tickets</h1>
+        <p>Buy your tickets here!</p>
+        <div class="container">
+        <div class="box"> <!--List of Events-->
+            <ul>
+                <li>
+                    <h2 class="homeHeading">Music Concert</h2>
+                    <p>Date: October 6, 2024</p>
+                    <p>Time: 5pm-7pm</p>
+                    <button id="musicConcert" onclick="openPopup()">Buy</button>
+                    <div class="overlay" id="overlay" onclick="closePopup()"></div>
+
+                    <!-- The popup box -->
+                    <div class="popup" id="popupBox">
+                        <h2>Sorry</h2>
+                        <p>The above event registration has already closed. Sorry for the inconvenience</p>
+                        <button onclick="closePopup()">Close Popup</button>
+                    </div>
+                </li>
+                <li>
+                    <h2 class="homeHeading">Art Exhibition</h2>
+                    <p>Date: October 12, 2024</p>
+                    <p>Time: 3pm-6pm</p>
+                    <button id="artExibition" onclick="openPopup1()">Buy</button>
+                    <div class="overlay" id="overlay1" onclick="closePopup1()"></div>
+
+                    <!-- The popup box -->
+                    <div class="popup" id="popupBox1">
+                        <h2>Confirm</h2>
+                        <p>Are you sure you want to buy?</p>
+                        <button onclick="closePopup1()">Yes</button>
+                        <button onclick="closePopup1()">No</button>
+                    </div>
+                </li>
+                <li>
+                    <h2 class="homeHeading">Technology Conference</h2>
+                    <p>Date: October 19, 2024</p>
+                    <p>Time: 7pm-10pm</p>
+                    <button id="techConf" onclick="openPopup1()">Buy</button>
+                    <div class="overlay" id="overlay1" onclick="closePopup1()"></div>
+
+                    <!-- The popup box -->
+                    <div class="popup" id="popupBox1">
+                        <h2>Confirm</h2>
+                        <p>Are you sure you want to buy?</p>
+                        <button onclick="closePopup1()" class="confirmButton">Yes</button>
+                        <button onclick="closePopup1()">No</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="boxVertwo">
+            <img src="SFHS Arena Pic 3.jpeg" alt="SFHS Logo" class="sfhsLogo">
+        </div>
+        </div>
+    </main>
+</body>
+</html>
